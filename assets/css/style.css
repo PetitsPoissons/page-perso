@@ -1,6 +1,30 @@
 :root {
     --greyish-white: #e2e2e2;
     --dark-grey: #2d2d2d;
+    --yellow-rb: #fce138;
+    --orange1: #ffc515;
+    --orange2: #f58449;
+    --orange3: #f36e39;
+    --red1: #ef3c23;
+    --red2: #ee2925;
+    --red3: #cf1f3e;
+    --pink1: #ee3586;
+    --pink2: #da4498;
+    --pink3: #b43794;
+    --pink4: #9c51a0;
+    --blue1: #69cdec;
+    --blue2: #3a91cf;
+    --blue3: #3d5aa9;
+    --blue4: #4b54a4;
+    --brown: #c67029;
+    --green1: #bad532;
+    --green2: #92c83e;
+    --green-chip: #028c7e;
+    --sapphire1: #56c3bc;
+    --sapphire2: #61c6c4;
+    --sapphire1-rb: #39a6b2;
+    --sapphire2-rb: #024e76;
+
 }
 
 * {
@@ -85,4 +109,37 @@ footer div {
     height: 600px;
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.hero h3 {
+    position: absolute;
+}
+
+#web {
+    color: var(--orange1);
+}
+
+#dev {
+    color: var(--orange2);
+}
+
+#web, #dev {
+    bottom: 200px;
+}
+
+#data {
+    color: var(--blue1);
+}
+
+#analysis {
+    color: var(--blue2);
+}
+
+#and {
+    color: var(--brown);
+}
+
+#viz {
+    color: var(--green2);
 }
