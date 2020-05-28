@@ -17,6 +17,10 @@ body {
     color: var(--dark-grey);
 }
 
+section {
+    padding: 60px;
+}
+
 /* styles for the header */
 header {
     background-color: var(--dark-grey);
@@ -73,4 +77,12 @@ footer h2 {
 
 footer div {
     line-height: 1.5;
+}
+
+/* styles for the hero */
+.hero {
+    background-image: url("../images/bg_microchip.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
 }
