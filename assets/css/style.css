@@ -125,14 +125,21 @@ footer div {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .greeting {
-    background-image: url("../images/pic_sandrine_sml.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 35%;
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.greeting img {
+    max-width: 100%;
+}
+
+.greeting-text {
     font-weight: lighter;
 }
 
@@ -158,9 +165,11 @@ footer div {
 }
 
 .hero-title {
-    width: 40%;
-    margin: 3.5%;
-    display: flex:
+    flex: 12;
+}
+
+.hero-title-line {
+    width: 50%;
 }
 
 #webdev {
@@ -173,7 +182,6 @@ footer div {
 
 #and {
     background-color: var(--blue2);
-    margin: 0 10px;
 }
 
 #viz {
