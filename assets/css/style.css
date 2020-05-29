@@ -85,12 +85,17 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
 }
 
 header nav ul li a {
-    font-size: 22px;
+    font-size: 1.55vw;
+    font-weight: lighter;
     margin: 0 30px;
 }
 
@@ -105,53 +110,74 @@ footer {
 
 footer h2 {
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 2vw;
     margin-bottom: 5px;
 }
 
 footer div {
     line-height: 1.5;
+    font-size: 1vw;
 }
 
 /* styles for the hero */
 .hero {
     background-image: url("../images/bg_microchip.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.hero h3 {
-    position: absolute;
+.greeting {
+    background-image: url("../images/pic_sandrine_sml.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    font-weight: lighter;
 }
 
-#web {
-    color: var(--orange1);
+.greeting h1 {
+    font-size: 3vw;
+    font style: italic;
 }
 
-#dev {
-    color: var(--orange2);
+.greeting h3 {
+    font-size: 1.5vw;
 }
 
-#web, #dev {
-    bottom: 200px;
+#hi {
+    color: var(--red3);
 }
 
-#data {
-    color: var(--blue1);
+#hola {
+    color: var(--yellow-rb);
 }
 
-#analysis {
-    color: var(--blue2);
+#bonjour {
+    color: var(--blue3);
+}
+
+.hero-title {
+    width: 40%;
+    margin: 3.5%;
+    display: flex:
+}
+
+#webdev {
+    background-color: var(--orange1);
+}
+
+#datanal {
+    background-color: var(--blue1);
 }
 
 #and {
-    color: var(--brown);
+    background-color: var(--blue2);
+    margin: 0 10px;
 }
 
 #viz {
-    color: var(--green2);
+    background-color: var(--green2);
 }
 
 /* styles for the "About Me" section */
