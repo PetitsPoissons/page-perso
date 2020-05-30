@@ -59,6 +59,7 @@ header {
     background-color: var(--primary-black);
     padding: 20px 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
@@ -68,13 +69,14 @@ header {
 }
 
 header h1 {
-    font-size: 36px;
+    width: 40%;
+    font-size: 3vw;
+    font-weight: normal;
     background-color: var(--primary-white);
     margin: 0;
-    text-align: right;
-    padding-left: 100px;
-    padding-right: 50px;
+    padding: 5px 15px 5px 70px;
     box-shadow: 1px 1px 2px var(--primary-white);
+    border-top-right-radius: 10px;
 }
 
 header a {
@@ -102,6 +104,15 @@ header nav ul li a {
     font-size: 1.55vw;
     font-weight: lighter;
     margin: 0 30px;
+    padding: 10px 15px;
+    border-bottom: 3px solid var(--primary-white);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+header nav ul li a:hover {
+    border-bottom-color: var(--orange3);
+    text-shadow: 1px 1px 2px var(--primary-white);
 }
 
 /* styles for the footer */
@@ -136,6 +147,8 @@ footer div {
 
 .greeting {
     background: var(--primary-black);
+    border: 1px solid var(--primary-white);
+    /*border-radius: 50px;*/
     box-shadow: 1px 1px 20px black;
 }
 
@@ -181,7 +194,7 @@ footer div {
     transform: translate(0, -200px);
 }
 
-/*
+/* WORK IN PROGRESS
 #hi {
     color: var(--red3);
 }
@@ -193,7 +206,7 @@ footer div {
 #bonjour {
     color: var(--blue3);
 }
-*/
+
 .flags ul {
     display: flex;
     justify-content: space-around;
@@ -205,6 +218,7 @@ footer div {
     text-decoration: none;
     font-size: 50px;
 }
+*/
 
 .hero-title {
     display: flex;
@@ -231,6 +245,10 @@ footer div {
     box-shadow: 1px 5px 10px black;
 }
 
+.hero-title-2 h3 {
+    margin-top: 30px;
+}
+
 #webdev {
     color: var(--orange1);
     transition: 1s;
@@ -242,18 +260,21 @@ footer div {
 }
 
 #and {
-    margin: 10px 30px;
-    color: white;
-    transition: 3s;
-    text-shadow: 2px 5px 10px black;
-    box-shadow: none;
-    background-color: transparent;
+    color: var(--primary-white);
+    transition: 0.2s;
+    margin-right: 15px;
 }
 
 #viz {
     color: var(--green2);
-    transition: 3.5s;
+    transition: 3s;
     background-color: rgba(45, 45, 45, 0.8);
 }
 
 /* styles for the "About Me" section */
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    
+}
