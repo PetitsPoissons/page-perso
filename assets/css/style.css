@@ -168,6 +168,7 @@ footer div {
     font-size: 4vw;
     font-weight: normal;
     color: var(--red3);
+    text-shadow: 1px 1px 2px white;
     z-index: 1000;
     position: relative;
     top: 200px;
@@ -229,7 +230,7 @@ footer div {
     font-weight: normal;
     padding-right: 10px;
     background-color: rgba(45, 45, 45, 0.8);
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px white;
     box-shadow: 1px 5px 10px black;
 }
 
@@ -254,9 +255,8 @@ footer div {
 }
 
 #viz {
-    color: var(--green2);
+    color: var(--blue2);
     transition: 2s;
-    background-color: rgba(45, 45, 45, 0.8);
 }
 
 /* styles for the "About Me" section */
@@ -294,12 +294,52 @@ main section {
 }
 
 .portfolio-grid-item {
-    border: 1px solid var(--primary-black);
+    border: 3px solid;
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-grid-item a {
+    text-decoration: none;
+    color: var(--primary-white);
 }
 
 .whr {
     grid-column: 1/ span 3;
     grid-row: 1/ span 3;
+    background-image: url(../images/portfolio/screen-shot-whr.png);
+    border-color: var(--blue2);
+}
+
+.dintel {
+    grid-row: 1/ span 2;
+    background-image: url(../images/portfolio/logo-dintel.png);
+    border-color: var(--blue1);
+}
+
+.belly-button {
+    background-image: url(../images/portfolio/screen-shot-belly-button.png);
+    border-color: var(--orange1);
+}
+
+.usgs {
+    background-image: url(../images/portfolio/screen-shot-usgs.png);
+    border-color: var(--blue2);
+}
+
+.d3times {
+    background-image: url(../images/portfolio/screen-shot-d3times.png);
+    border-color: var(--blue2);
+}
+
+.ufo {
+    background-image: url(../images/portfolio/nasa.jpg);
+    border-color: var(--orange1);
+}
+
+.run-buddy {
+    background-image: url(../images/portfolio/screen-shot-run-buddy.png);
+    border-color: var(--orange1);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
