@@ -41,19 +41,6 @@ body {
     color: var(--primary-black);
 }
 
-section {
-    padding: 60px;
-}
-
-.section-title {
-    font-size: 55px;
-    font-weight: lighter;
-    text-align: right;
-    padding: 0 50px;
-    border-right: 3px solid;
-    border-color: var(--primary-black);
-}
-
 /* styles for the header */
 header {
     background-color: var(--primary-black);
@@ -111,7 +98,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    border-bottom-color: var(--orange3);
+    border-bottom-color: var(--red3);
     text-shadow: 1px 1px 2px var(--primary-white);
 }
 
@@ -140,6 +127,7 @@ footer div {
     background-image: url("../images/bg_microchip.jpg");
     background-size: cover;
     background-position: center;
+    padding: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -261,18 +249,65 @@ footer div {
 
 #and {
     color: var(--primary-white);
-    transition: 0.2s;
+    transition: 0.1s;
     margin-right: 15px;
 }
 
 #viz {
     color: var(--green2);
-    transition: 3s;
+    transition: 2s;
     background-color: rgba(45, 45, 45, 0.8);
 }
 
 /* styles for the "About Me" section */
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*justify-content: space-between;*/
+}
 
+.section-title {
+    font-size: 40px;
+    line-height:1;
+    font-weight: lighter;
+    text-align: right;
+    margin: 20px;
+    flex: 1 5%;
+}
+
+.section-content {
+    border-left: 3px solid;
+    border-color: var(--primary-black);
+    padding: 10px 30px;
+    flex: 5;
+    font-size: 22px;
+}
+
+/* styles for the "Portfolio" section */
+.portfolio-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    place-items: stretch stretch;
+}
+
+.portfolio-grid-item {
+    border: 1px solid var(--primary-black);
+}
+
+.whr {
+    grid-column: 1/ span 3;
+    grid-row: 1/ span 3;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    .greeting {
+        flex: -1 20%;
+    }
+}
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
