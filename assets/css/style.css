@@ -341,7 +341,18 @@ main section {
 
 /* styles for the "Contact" section */
 .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.tel-email a {
+    text-decoration: none;
+    color: var(--blue2);
+}
+
+.linkedin img {
+    max-width: 200px;
 }
 
 /* MEDIA QUERY FOR SCREENS 1700px WIDE OR MORE */
@@ -393,6 +404,9 @@ main section {
         grid-column: 1/ span 2;
         grid-row: 5/ span 2;
     }
+    .linkedin img {
+        max-width: 170px;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -426,6 +440,9 @@ main section {
     .portfolio-grid-item.belly-button {
         grid-column: 1/ span 1;
         grid-row: 3/ span 1;
+    }
+    .linkedin img {
+        max-width: 100px;
     }
 }
 
