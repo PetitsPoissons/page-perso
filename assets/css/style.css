@@ -1,29 +1,10 @@
 :root {
     --primary-white: #e2e2e2;
     --primary-black: #2d2d2d;
-    --yellow-rb: #fce138;
     --orange1: #ffc515;
-    --orange2: #f58449;
-    --orange3: #f36e39;
-    --red1: #ef3c23;
-    --red2: #ee2925;
     --red3: #cf1f3e;
-    --pink1: #ee3586;
-    --pink2: #da4498;
-    --pink3: #b43794;
-    --pink4: #9c51a0;
     --blue1: #69cdec;
     --blue2: #3a91cf;
-    --blue3: #3d5aa9;
-    --blue4: #4b54a4;
-    --brown: #c67029;
-    --green1: #bad532;
-    --green2: #92c83e;
-    --green-chip: #028c7e;
-    --sapphire1: #56c3bc;
-    --sapphire2: #61c6c4;
-    --sapphire1-rb: #39a6b2;
-    --sapphire2-rb: #024e76;
 
 }
 
@@ -131,6 +112,7 @@ footer div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .greeting {
@@ -150,6 +132,16 @@ footer div {
     padding: 15px;
     position: relative;
     overflow: hidden;
+}
+
+.greeting-img::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(45, 45, 45, 0.4));
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .greeting-img::after {
@@ -264,7 +256,7 @@ main section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /*justify-content: space-between;*/
+    margin: 50px 0;
 }
 
 .section-title {
@@ -279,7 +271,7 @@ main section {
 .section-content {
     border-left: 3px solid;
     border-color: var(--primary-black);
-    padding: 10px 30px;
+    padding: 0 30px;
     flex: 5;
     font-size: 22px;
 }
@@ -287,59 +279,86 @@ main section {
 /* styles for the "Portfolio" section */
 .portfolio-grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    grid-template-rows: repeat(5, minmax(100px, 1fr));
     grid-gap: 10px;
     place-items: stretch stretch;
 }
 
 .portfolio-grid-item {
-    border: 3px solid;
+    border: 1px solid var(--primary-black);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.portfolio-grid-item a::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.portfolio-grid-item:hover.portfolio-grid-item a::after{
+    opacity: 1;
 }
 
 .portfolio-grid-item a {
     text-decoration: none;
     color: var(--primary-white);
+    background-color: rgba(45, 45, 45, 0.6);
+    width: 70%;
+    padding: 5px 0 5px 5px;
 }
 
-.whr {
+.portfolio-grid-item h4, .portfolio-grid-item h5 {
+    font-weight: normal;
+}
+
+.portfolio-grid-item h5 {
+    margin-top: 5px;
+}
+.portfolio-grid-item p {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.portfolio-grid-item.whr {
     grid-column: 1/ span 3;
-    grid-row: 1/ span 3;
+    grid-row: 1/ span 4;
     background-image: url(../images/portfolio/screen-shot-whr.png);
-    border-color: var(--blue2);
 }
 
-.dintel {
+.portfolio-grid-item.dintel {
     grid-row: 1/ span 2;
     background-image: url(../images/portfolio/logo-dintel.png);
-    border-color: var(--blue1);
 }
 
-.belly-button {
+.portfolio-grid-item.belly-button {
+    grid-row: 3/ span 2;
     background-image: url(../images/portfolio/screen-shot-belly-button.png);
-    border-color: var(--orange1);
 }
 
-.usgs {
+.portfolio-grid-item.usgs {
     background-image: url(../images/portfolio/screen-shot-usgs.png);
-    border-color: var(--blue2);
 }
 
-.d3times {
+.portfolio-grid-item.d3times {
     background-image: url(../images/portfolio/screen-shot-d3times.png);
-    border-color: var(--blue2);
 }
 
-.ufo {
+.portfolio-grid-item.ufo {
     background-image: url(../images/portfolio/nasa.jpg);
-    border-color: var(--orange1);
 }
 
-.run-buddy {
+.portfolio-grid-item.run-buddy {
     background-image: url(../images/portfolio/screen-shot-run-buddy.png);
-    border-color: var(--orange1);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
