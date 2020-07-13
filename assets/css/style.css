@@ -306,9 +306,19 @@ main section {
 }
 
 .portfolio-grid-item.whr {
-    grid-column: 1/ span 3;
-    grid-row: 1/ span 4;
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 3;
     background-image: url(../images/portfolio/screen-shot-whr.png);
+}
+
+.portfolio-grid-item.covie {
+    grid-row: 1/ span 2;
+    background-image: url(../images/portfolio/screen-shot-coviesearch.png);
+}
+
+.portfolio-grid-item.weather {
+    grid-row: 3/ span 2;
+    background-image: url(../images/portfolio/screen-shot-weather-dashboard.png);
 }
 
 .portfolio-grid-item.dintel {
