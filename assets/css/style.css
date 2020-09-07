@@ -338,13 +338,24 @@ main section {
 .portfolio-grid-item.d3times {
     background-image: url(../images/portfolio/screen-shot-d3times.png);
 }
-
+/*
 .portfolio-grid-item.ufo {
     background-image: url(../images/portfolio/nasa.jpg);
 }
 
 .portfolio-grid-item.run-buddy {
     background-image: url(../images/portfolio/screen-shot-run-buddy.png);
+}
+*/
+.portfolio-grid-item.shrinko {
+    grid-column: 1/ span 2;
+    grid-row: 5/ span 2;;
+    background-image: url(../images/portfolio/shrinko.jpg);
+}
+.portfolio-grid-item.tech-blog {
+    grid-column: 3/ span 2;
+    grid-row: 5/ span 2;;
+    background-image: url(../images/portfolio/the-tech-blog.jpg);
 }
 
 /* styles for the "Contact" section */
